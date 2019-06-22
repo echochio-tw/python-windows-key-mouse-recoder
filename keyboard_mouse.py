@@ -1,8 +1,10 @@
 import json
 import threading
 import time
-import tkinter
+#import tkinter 改了可执行了
+import Tkinter as tk #改了可执行了
 
+from Tkinter import * #加了可执行了
 from pynput import keyboard, mouse
 from pynput.keyboard import Controller as KeyBoardController, KeyCode
 from pynput.mouse import Button, Controller as MouseController
@@ -250,7 +252,8 @@ def isNumber(content):
 
 
 if __name__ == '__main__':
-    root = tkinter.Tk()
+    # root = tkinter.Tk() 改了可执行了
+    root = Tk() #改了可执行了
     root.title('按键精灵-蓝士钦')
     root.geometry('200x200+400+100')
 
